@@ -1,0 +1,70 @@
+.pAddProduct {
+    width: 100%;
+    display: flex;
+  }
+  .pAddProduct .pAddProductContainer {
+    flex: 6;
+  }
+  .pAddProduct .pAddProductContainer .top, .pAddProduct .pAddProductContainer .bottom {
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+  }
+  .pAddProduct .pAddProductContainer .top h1, .pAddProduct .pAddProductContainer .bottom h1 {
+    color: lightgray;
+    font-size: 20px;
+  }
+  .pAddProduct .pAddProductContainer .top .left, .pAddProduct .pAddProductContainer .bottom .left {
+    flex: 1;
+    text-align: center;
+  }
+  .pAddProduct .pAddProductContainer .top .left img, .pAddProduct .pAddProductContainer .bottom .left img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .pAddProduct .pAddProductContainer .top .right, .pAddProduct .pAddProductContainer .bottom .right {
+    flex: 2;
+  }
+  .pAddProduct .pAddProductContainer .top .right form, .pAddProduct .pAddProductContainer .bottom .right form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+  }
+  .pAddProduct .pAddProductContainer .top .right form .formInput, .pAddProduct .pAddProductContainer .bottom .right form .formInput {
+    width: 40%;
+  }
+  .pAddProduct .pAddProductContainer .top .right form .formInput label, .pAddProduct .pAddProductContainer .bottom .right form .formInput label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .pAddProduct .pAddProductContainer .top .right form .formInput label .icon, .pAddProduct .pAddProductContainer .bottom .right form .formInput label .icon {
+    cursor: pointer;
+  }
+  .pAddProduct .pAddProductContainer .top .right form .formInput input, .pAddProduct .pAddProductContainer .bottom .right form .formInput input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  .pAddProduct .pAddProductContainer .top .right form button, .pAddProduct .pAddProductContainer .bottom .right form button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  &:disabled{
+    background-color: rgba(4, 72, 72, 0.473);
+    cursor: not-allowed;
+  }
+  

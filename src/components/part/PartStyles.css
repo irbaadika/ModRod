@@ -1,0 +1,61 @@
+.part {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .part:before {
+      content: '';
+      position: absolute;
+      background: url(../../assets/blackbg.jpg)no-repeat center center/cover;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+  }
+  
+  .part .container {
+      padding: 3%;
+  }
+  
+  .part .content {
+      margin-top: 5%;
+      text-align: center;
+  }
+  
+  .part h2 {
+      color: gainsboro;
+      text-shadow: 2px 2px 5px orange;
+      margin-bottom: -3%;
+  }
+  
+  .part img {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .part .main {
+    width: 60%;
+    float: left;
+    padding-left: 100px;
+  }
+  
+  .part .desc {
+    width: 40%;
+    float: right;
+    margin-top: 20%;
+    text-align: center;
+    color: gainsboro;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px orange;
+  }
+  
+  @media screen and (max-width: 940px) {
+    .part .content {
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.7);
+    }
+  }
+  

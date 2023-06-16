@@ -1,0 +1,7 @@
+.pList {
+  display: flex;
+  width: 100%;
+}
+.pList .pListContainer {
+  flex: 6;
+}

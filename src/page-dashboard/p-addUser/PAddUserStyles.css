@@ -1,0 +1,69 @@
+.pAddUser {
+  width: 100%;
+  display: flex;
+}
+.pAddUser .pAddUserContainer {
+  flex: 6;
+}
+.pAddUser .pAddUserContainer .top, .pAddUser .pAddUserContainer .bottom {
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+}
+.pAddUser .pAddUserContainer .top h1, .pAddUser .pAddUserContainer .bottom h1 {
+  color: lightgray;
+  font-size: 20px;
+}
+.pAddUser .pAddUserContainer .top .left, .pAddUser .pAddUserContainer .bottom .left {
+  flex: 1;
+  text-align: center;
+}
+.pAddUser .pAddUserContainer .top .left img, .pAddUser .pAddUserContainer .bottom .left img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.pAddUser .pAddUserContainer .top .right, .pAddUser .pAddUserContainer .bottom .right {
+  flex: 2;
+}
+.pAddUser .pAddUserContainer .top .right form, .pAddUser .pAddUserContainer .bottom .right form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+.pAddUser .pAddUserContainer .top .right form .formInput, .pAddUser .pAddUserContainer .bottom .right form .formInput {
+  width: 40%;
+}
+.pAddUser .pAddUserContainer .top .right form .formInput label, .pAddUser .pAddUserContainer .bottom .right form .formInput label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pAddUser .pAddUserContainer .top .right form .formInput label .icon, .pAddUser .pAddUserContainer .bottom .right form .formInput label .icon {
+  cursor: pointer;
+}
+.pAddUser .pAddUserContainer .top .right form .formInput input, .pAddUser .pAddUserContainer .bottom .right form .formInput input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.pAddUser .pAddUserContainer .top .right form button, .pAddUser .pAddUserContainer .bottom .right form button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+&:disabled{
+  background-color: rgba(4, 72, 72, 0.473);
+  cursor: not-allowed;
+}
